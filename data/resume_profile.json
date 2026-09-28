@@ -1,0 +1,42 @@
+{
+  "name": "Wei Huang",
+
+  "skills": {
+
+    "python": 10,
+    "c++": 10,
+    "fortran": 10,
+    "mpi": 10,
+    "openmp": 8,
+
+    "machine learning": 10,
+    "artificial intelligence": 10,
+    "graphcast": 10,
+
+    "data assimilation": 15,
+    "enkf": 15,
+
+    "weather": 10,
+    "climate": 10,
+    "forecast": 10,
+
+    "aws": 7,
+    "azure": 7,
+    "gcp": 7,
+
+    "gpu": 8,
+    "cuda": 8,
+    "hpc": 12,
+
+    "numerical weather prediction": 15,
+
+    "gfs": 10,
+    "wrf": 10,
+    "mpas": 10,
+    "ufs": 10,
+
+    "netcdf": 6,
+
+    "research": 5
+  }
+}

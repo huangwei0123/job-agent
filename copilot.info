@@ -1,0 +1,772 @@
+could you please help me build a job search Ai agent, with my resume?
+Copilot said:
+Absolutely. I can help you build a personalized AI Job Search Agent that uses your resume to:
+
+Analyze your skills and experience
+Find matching jobs automatically
+Score and rank opportunities
+Tailor your resume for each job
+Generate customized cover letters
+Track applications
+Prepare interview questions and answers
+Follow up on applications
+What I need from you
+Please upload your resume (PDF, DOCX, or TXT).
+
+Once I have it, I'll help you create:
+
+Option 1: Simple Personal Job Search Assistant
+Using:
+
+ChatGPT/Copilot
+LinkedIn Jobs
+Indeed
+Google Jobs
+The agent will:
+
+Read your resume
+Define your ideal roles
+Create job-search prompts
+Evaluate job descriptions
+Generate tailored application materials
+Option 2: Semi-Automated AI Agent
+Using:
+
+Python
+LinkedIn job feeds
+OpenAI/Copilot APIs
+Google Sheets/Airtable
+The agent will:
+
+Search for jobs daily
+Calculate match scores
+Store opportunities
+Generate customized resumes and cover letters
+Track status automatically
+Option 3: Full Autonomous Job Search Agent
+Using:
+
+LangGraph/CrewAI/OpenAI Agents
+LinkedIn, Indeed, company career pages
+Email notifications
+The workflow:
+
+
+
+
+Plain Text
+Resume
+   ↓
+Profile Extractor Agent
+   ↓
+Job Discovery Agent
+   ↓
+Job Matching Agent
+   ↓
+Resume Tailoring Agent
+   ↓
+Cover Letter Agent
+   ↓
+Application Tracker Agent
+   ↓
+Interview Prep Agent
+
+Show more lines
+Deliverables I can generate after seeing your resume
+Professional candidate profile
+Skills matrix
+Target-job recommendations
+AI agent architecture
+Python code for the job-search agent
+Resume-tailoring prompts
+Cover-letter generator prompts
+Application-tracking dashboard design
+LinkedIn optimization recommendations
+A complete end-to-end AI workflow
+Upload your resume, and I'll build a job-search agent specifically around your background, experience level, target salary, and preferred industries.
+
+
+
+
+
+You said:
+
+WeiHuangResume
+Here is my resume, thanks
+Copilot said:
+Thanks, Wei. I reviewed your resume in detail. WeiHuangResume shows a very strong combination of AI/ML, weather and climate modeling, high-performance computing (HPC), cloud computing, data assimilation, scientific software engineering, and decades of domain expertise in numerical weather prediction.
+PDF type
+
+Resume skills and work experience page
+
+My assessment
+You are not a typical software engineer candidate.
+
+Your profile fits into a rare niche:
+
+AI for Weather & Climate
+Scientific AI / Physics-Informed AI
+Data Assimilation
+HPC & Supercomputing
+Cloud Scientific Computing
+Numerical Weather Prediction (NWP)
+Research Software Engineering
+Computational Science
+Earth System Modeling
+Your recent work includes:
+
+AI data assimilation development
+GraphCast-style forecasting
+NOAA Global Workflow
+AWS/Azure/GCP deployments
+Ensemble Kalman Filter systems
+Large-scale scientific software development
+Python/C++/Fortran HPC applications
+PDF type
+This places you in a very attractive market for:
+
+NVIDIA
+Microsoft Research
+Google DeepMind Weather
+Anthropic scientific AI teams
+OpenAI scientific computing initiatives
+IBM Research
+NOAA
+NCAR
+ECMWF
+JPL
+NASA
+DOE National Labs
+Raytheon
+Lockheed Martin
+Aerospace Corp
+Climate-tech startups
+Job Search AI Agent
+I would build a multi-agent system specifically for your background.
+
+Agent Architecture
+
+
+
+Plain Text
+                Resume
+                   |
+                   v
+     +-------------------------+
+     | Candidate Profile Agent |
+     +-------------------------+
+                   |
+                   v
+ 
+     +-------------------------+
+     | Job Discovery Agent     |
+     +-------------------------+
+         |      |       |
+         |      |       |
+      LinkedIn Indeed Company Sites
+ 
+                   |
+                   v
+ 
+     +-------------------------+
+     | Match Scoring Agent     |
+     +-------------------------+
+ 
+               Score 0-100
+ 
+                   |
+                   v
+ 
+     +-------------------------+
+     | Resume Tailor Agent     |
+     +-------------------------+
+ 
+                   |
+                   v
+ 
+     +-------------------------+
+     | Cover Letter Agent      |
+     +-------------------------+
+ 
+                   |
+                   v
+ 
+     +-------------------------+
+     | Application Tracker     |
+     +-------------------------+
+ 
+                   |
+                   v
+ 
+     +-------------------------+
+     | Interview Prep Agent    |
+     +-------------------------+
+
+Show more lines
+Candidate Profile Extracted From Your Resume
+The first agent should transform your resume into structured data.
+
+
+
+
+JSON
+{
+  "name": "Wei Huang",
+  "target_roles": [
+    "Principal AI Scientist",
+    "Senior AI Engineer",
+    "Principal Computational Scientist",
+    "Machine Learning Scientist",
+    "Research Software Engineer",
+    "Scientific AI Engineer",
+    "HPC Architect"
+  ],
+  "skills": {
+    "machine_learning": [
+      "GraphCast",
+      "AI Data Assimilation",
+      "EAGLE",
+      "Forecast AI"
+    ],
+    "programming": [
+      "Python",
+      "C++",
+      "Fortran",
+      "MPI",
+      "OpenMP"
+    ],
+    "cloud": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "weather": [
+      "WRF",
+      "GFS",
+      "MPAS",
+      "UFS",
+      "Data Assimilation",
+      "enKF"
+    ],
+    "visualization": [
+      "OpenGL",
+      "Qt",
+      "StarViewer"
+    ]
+  }
+}
+
+Show more lines
+This becomes your personal "knowledge base."
+
+Job Match Scoring Formula
+For your profile, I'd use:
+
+
+
+
+Python
+score =
+  0.35 * skills_match +
+  0.25 * ai_match +
+  0.15 * cloud_match +
+  0.15 * hpc_match +
+  0.10 * salary_match
+``
+Boost score if posting contains:
+
+
+
+
+Plain Text
+AI
+Machine Learning
+Foundation Model
+GraphCast
+Weather
+Climate
+Scientific Computing
+HPC
+GPU
+CUDA
+Numerical Modeling
+Data Assimilation
+Forecasting
+Research
+Best Search Queries For You
+LinkedIn
+
+
+
+Plain Text
+Principal AI Scientist Weather
+ 
+Senior Machine Learning Scientist Forecasting
+ 
+Principal Computational Scientist
+ 
+Scientific AI Engineer
+ 
+Research Software Engineer Climate
+ 
+Earth System AI Scientist
+ 
+ML Weather Prediction
+ 
+AI Data Assimilation
+ 
+GraphCast Engineer
+ 
+Climate Foundation Models
+
+Show more lines
+Google
+
+
+
+Plain Text
+site:jobs.lever.co weather AI
+ 
+site:greenhouse.io climate AI scientist
+ 
+site:careers.microsoft.com scientific AI
+ 
+site:careers.google.com weather research
+ 
+site:nvidia.com climate model engineer
+Resume Tailoring Agent Prompt
+
+
+
+Plain Text
+You are an expert technical recruiter.
+ 
+Given:
+ 
+1. Wei Huang resume
+2. A job description
+ 
+Identify:
+ 
+- missing keywords
+- matching skills
+- achievements to emphasize
+ 
+Return:
+ 
+1. optimized resume summary
+2. ATS keywords
+3. skill gap analysis
+4. match score
+ 
+Target:
+maximize interview probability.
+
+Show more lines
+Cover Letter Agent Prompt
+
+
+
+Plain Text
+Write a cover letter for Wei Huang.
+ 
+Key strengths:
+ 
+- AI data assimilation
+- GraphCast forecasting
+- NOAA global workflow
+- HPC expertise
+- AWS/Azure/GCP
+- Numerical weather prediction
+- Python/C++/Fortran
+ 
+Keep under 350 words.
+Highlight scientific impact and production deployment.
+Interview Preparation Agent
+Generate:
+
+Technical
+AI/ML
+Deep Learning
+Graph Neural Networks
+Weather AI
+Foundation Models
+Data Assimilation
+HPC
+GPU
+Behavioral
+Leading scientific projects
+Migrating systems to cloud
+Collaboration with researchers
+Mentoring engineers
+Roles I Recommend Targeting
+Highest probability:
+
+Principal AI Scientist
+Senior Machine Learning Scientist
+Scientific AI Engineer
+Principal Computational Scientist
+Research Software Engineer
+Climate AI Scientist
+Earth System Foundation Model Researcher
+HPC AI Engineer
+Avoid targeting generic software engineering positions. Your specialized scientific AI background is much more valuable and differentiating.
+PDF type
+
+If you'd like, I can next build the actual Python-based AI Job Search Agent (complete code with LinkedIn/Indeed search, job scoring, resume tailoring, and application tracking) tailored specifically to your resume.
+
+
+
+
+
+Sources
+You said:
+Build the Python agent MVP
+Copilot said:
+Great resume for this project. Your background is specialized enough that a generic job bot is not ideal. We should build an agent that understands:
+
+Scientific Computing
+AI/ML
+Weather & Climate
+HPC
+Data Assimilation
+Research positions
+Principal-level engineering roles
+The resume I reviewed shows substantial experience in NOAA, NCAR, AI data assimilation, GraphCast-style forecasting, HPC, cloud platforms, and scientific software engineering.
+PDF type
+
+MVP Architecture
+Start simple.
+
+
+
+
+Plain Text
+┌─────────────────────┐
+│ Resume Knowledge    │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Profile Extractor   │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Job Search Agent    │
+│ LinkedIn/Indeed RSS │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Match Scoring Agent │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Application DB      │
+│ SQLite              │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Daily Report        │
+└─────────────────────┘
+
+Show more lines
+MVP Deliverables:
+
+Search jobs
+Score jobs
+Save jobs
+Email/report top matches
+Later versions:
+
+Resume tailoring
+Cover letter generation
+Automatic applications
+Interview prep
+Project Structure
+
+
+
+Plain Text
+job-agent/
+ 
+├── config.py
+├── skills.json
+├── resume_profile.json
+ 
+├── search_jobs.py
+├── score_jobs.py
+├── report.py
+ 
+├── jobs.db
+ 
+├── agents/
+│   ├── profile_agent.py
+│   ├── discovery_agent.py
+│   └── matching_agent.py
+ 
+└── requirements.txt
+
+Show more lines
+Resume Knowledge Base
+Create:
+
+
+
+
+JSON
+{
+  "name": "Wei Huang",
+ 
+  "target_roles": [
+    "Principal AI Scientist",
+    "Research Scientist",
+    "Senior Machine Learning Engineer",
+    "Scientific Software Engineer",
+    "Principal Computational Scientist",
+    "Earth System AI Engineer"
+  ],
+ 
+  "skills": [
+    "Python",
+    "C++",
+    "Fortran",
+    "MPI",
+    "OpenMP",
+    "Machine Learning",
+    "GraphCast",
+    "AI Data Assimilation",
+    "Weather Forecasting",
+    "Cloud Computing",
+    "AWS",
+    "Azure",
+    "Google Cloud",
+    "HPC",
+    "GPU",
+    "NetCDF",
+    "Climate Modeling"
+  ]
+}
+
+Show more lines
+Derived from WeiHuangResume.
+PDF type
+
+Job Discovery Agent
+
+
+
+Python
+# discovery_agent.py
+ 
+from jobspy import scrape_jobs
+ 
+def get_jobs():
+ 
+    jobs = scrape_jobs(
+        site_name=[
+            "linkedin",
+            "indeed"
+        ],
+ 
+        search_term=
+        "machine learning weather climate "
+        "scientific computing",
+ 
+        location="United States",
+ 
+        results_wanted=100,
+ 
+        hours_old=96
+    )
+ 
+    return jobs
+
+Show more lines
+Install:
+
+
+
+
+Shell
+pip install python-jobspy
+Matching Agent
+This is where your domain expertise matters.
+
+
+
+
+Python
+KEYWORDS = {
+ 
+    "GraphCast": 10,
+    "AI": 8,
+    "Machine Learning": 8,
+    "Forecasting": 8,
+    "Weather": 10,
+    "Climate": 10,
+    "Data Assimilation": 15,
+    "Python": 8,
+    "AWS": 5,
+    "Azure": 5,
+    "GCP": 5,
+    "HPC": 10,
+    "GPU": 8,
+    "Research": 6,
+    "Numerical": 8
+}
+
+Show more lines
+Scoring:
+
+
+
+
+Python
+def score_job(text):
+ 
+    score = 0
+ 
+    text = text.lower()
+ 
+    for skill, value in KEYWORDS.items():
+ 
+        if skill.lower() in text:
+            score += value
+ 
+    return score
+Save to SQLite
+
+
+
+Python
+import sqlite3
+ 
+conn = sqlite3.connect("jobs.db")
+ 
+conn.execute("""
+ 
+CREATE TABLE IF NOT EXISTS jobs(
+ 
+id INTEGER PRIMARY KEY,
+ 
+title TEXT,
+ 
+company TEXT,
+ 
+score INTEGER,
+ 
+url TEXT
+ 
+)
+ 
+""")
+
+Show more lines
+Top Match Report
+
+
+
+Python
+jobs.sort_values(
+    "score",
+    ascending=False
+).head(20)
+Output:
+
+
+
+
+Plain Text
+95 NVIDIA Senior AI Scientist
+ 
+92 Google DeepMind Weather AI
+ 
+89 Microsoft Research Climate AI
+ 
+84 IBM Research Scientist
+LLM-Based Scoring
+Instead of keywords alone:
+
+
+
+
+Python
+prompt = f"""
+ 
+Candidate:
+ 
+{resume_profile}
+ 
+Job:
+ 
+{job_description}
+ 
+Give:
+ 
+1. Match score 0-100
+2. Missing skills
+3. Strengths
+4. Recommendation
+ 
+"""
+
+Show more lines
+This becomes much smarter.
+
+Daily Execution
+Linux cron:
+
+
+
+
+Shell
+0 8 * * * \
+python run_agent.py
+Every morning:
+
+Search jobs
+Score jobs
+Save matches
+Produce report
+Version 2
+After MVP works:
+
+
+
+
+Plain Text
+MVP
+ ├─ Search
+ ├─ Score
+ └─ Report
+ 
+V2
+ ├─ Resume tailoring
+ ├─ Cover letters
+ ├─ Interview prep
+ └─ Salary estimation
+ 
+V3
+ ├─ CrewAI
+ ├─ LangGraph
+ ├─ Autonomous workflow
+ └─ Application tracking
+
+Show more lines
+Given your NOAA/NCAR/EPIC background, I'd tune the agent specifically for jobs mentioning UFS, WRF, MPAS, GraphCast, Earth-system AI, climate foundation models, HPC, CUDA, scientific machine learning, data assimilation, and atmospheric sciences, since those are the highest-value keywords reflected in WeiHuangResume.
+PDF type
+
+My recommendation: build the MVP with Python + JobSpy + SQLite + OpenAI/Copilot API, then evolve to a LangGraph multi-agent system after you have validated which job sources produce the best matches.
+
+
+
+
+
+
+Sources
+
+

@@ -1,0 +1,27 @@
+job-search-agent/
+
+├── requirements.txt
+├── config.py
+├── run_agent.py
+
+├── data/
+│   ├── resume_profile.json
+│   └── jobs.db
+
+├── agents/
+│   ├── discovery_agent.py
+│   ├── matching_agent.py
+│   ├── storage_agent.py
+│   └── reporting_agent.py
+
+
+requirements.txt
+Plain Text
+python-jobspy
+pandas
+sqlalchemy
+tabulate
+python-dotenv
+
+:wq
+vi
