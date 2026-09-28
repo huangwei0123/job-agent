@@ -1,3 +1,5 @@
+import time
+
 from jobspy import scrape_jobs
 from config import SEARCH_TERMS
 from config import LOCATION
@@ -11,6 +13,10 @@ def fetch_jobs():
 
         print(f"Searching: {term}")
 
+        start=time.time()
+
+        print(f"\nSearching: {term}")
+
         try:
 
             jobs = scrape_jobs(
@@ -21,7 +27,7 @@ def fetch_jobs():
                 search_term=term,
                 location=LOCATION,
                 results_wanted=RESULTS_WANTED,
-                hours_old=168
+                hours_old=48
             )
 
             if jobs is not None:
@@ -29,5 +35,10 @@ def fetch_jobs():
 
         except Exception as ex:
             print(ex)
+
+        print(
+            f"Finished {term} "
+            f"in {time.time()-start:.2f} sec"
+        )
 
     return all_jobs
